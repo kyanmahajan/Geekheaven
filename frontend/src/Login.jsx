@@ -13,8 +13,8 @@ const LoginRegister = () => {
   const handleSubmit = async () => {
     try {
       let endpoint = isLogin
-        ? "https://geekheaven-3.onrender.com/login"
-        : "https://geekheaven-3.onrender.com/register";
+        ? "https://geekheaven-3.onrender.com/auth/api/login"
+        : "https://geekheaven-3.onrender.com/auth/api/register";
 
       let payload = { name, email, password };
 
