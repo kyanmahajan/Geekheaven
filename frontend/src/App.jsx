@@ -21,7 +21,7 @@ function App() {
 
   const fetchbook = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/getbook", {
+      const response = await axios.get("https://geekheaven-3.onrender.com/api/getbook", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
           "Content-Type": "application/json",
@@ -65,7 +65,7 @@ function App() {
   const handleBookmark = async (id) => {
     try {
       await axios.post(
-        "http://localhost:3000/api/book",
+        "https://geekheaven-3.onrender.com/api/book",
         { id },
         {
           headers: {
